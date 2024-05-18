@@ -1,0 +1,1634 @@
+<html>
+  <head>
+    <title>MR survey answers</title>
+    <link rel="shortcut icon" href="https://ssl.gstatic.com/docs/documents/images/kix-favicon7.ico">
+    <meta name="referrer" content="origin">
+    <style nonce="NH-tQ1iAMPAG_WC_bl3KVg">
+      html {
+        overflow: auto;
+      }
+
+      body {
+        margin: 0;
+        overflow: hidden;
+        word-wrap: break-word;
+      }
+
+      .app-container {
+        height: 100%;
+        /* Height of mobileweb header + 1 px vertical shadow. */
+        overflow: auto;
+      }
+
+      .doc {
+        padding: 20px 12px 0 12px;
+        position: relative;
+      }
+
+      .doc .doc-content {
+        margin: auto;
+        /* Override the inline style that is set on the .doc-content div, which is used to store layout
+     data for roundtripping. */
+        padding: 24px 0 !important;
+        max-width: 770px !important;
+      }
+    </style>
+    <style>
+      @import url(https://fonts.googleapis.com/css?family=Google+Sans);
+
+      .docs-ml-noselect {
+        -webkit-touch-callout: none;
+        -webkit-user-drag: none;
+        -webkit-user-select: none;
+        user-select: none
+      }
+
+      .docs-ml-promotion {
+        z-index: 1002
+      }
+
+      .docs-ml-header {
+        z-index: 1
+      }
+
+      .docs-ml-icon {
+        direction: ltr;
+        display: inline-block;
+        text-align: left;
+        overflow: hidden;
+        position: relative;
+        vertical-align: middle
+      }
+
+      .docs-ml-img:before {
+        content: url(//ssl.gstatic.com/docs/common/mobileweb_sprite1.png)
+      }
+
+      .docs-ml-img-container {
+        height: 156px;
+        position: absolute;
+        width: 36px
+      }
+
+      .docs-ml-docs-logo-icon {
+        left: 0;
+        top: -36px
+      }
+
+      .docs-ml-sheets-logo-icon {
+        left: 0;
+        top: 0
+      }
+
+      .docs-ml-slides-logo-icon {
+        left: 0;
+        top: -96px
+      }
+
+      .docs-ml-arrow-back-icon {
+        left: 0;
+        top: -132px
+      }
+
+      .docs-ml-edit-icon {
+        left: 0;
+        top: -72px
+      }
+
+      @media screen and (-webkit-min-device-pixel-ratio:2) {
+        .docs-ml-img {
+          content: url(//ssl.gstatic.com/docs/common/mobileweb_sprite1.png)
+        }
+
+        .docs-ml-img-container {
+          height: 156px;
+          position: absolute;
+          width: 36px
+        }
+
+        .docs-ml-docs-logo-icon {
+          left: 0;
+          top: -36px
+        }
+
+        .docs-ml-sheets-logo-icon {
+          left: 0;
+          top: 0
+        }
+
+        .docs-ml-slides-logo-icon {
+          left: 0;
+          top: -96px
+        }
+
+        .docs-ml-arrow-back-icon {
+          left: 0;
+          top: -132px
+        }
+
+        .docs-ml-edit-icon {
+          left: 0;
+          top: -72px
+        }
+      }
+
+      .docs-ml-header {
+        background: #fafafa;
+        border-bottom: 1px solid #cbcbcb;
+        box-shadow: 0 1px 1px rgba(0, 0, 0, .1);
+        box-sizing: border-box;
+        font-family: Google Sans, Roboto, Helvetica Neue, Helvetica, Arial, sans-serif;
+        padding: 4px 0;
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%
+      }
+
+      .docs-ml-header-icon {
+        height: 24px;
+        opacity: .6;
+        width: 24px
+      }
+
+      .docs-ml-header-icon-container {
+        padding: 12px
+      }
+
+      .docs-ml-header-item {
+        display: inline-block;
+        vertical-align: middle
+      }
+
+      .docs-ml-header-drive-link {
+        padding-left: 4px
+      }
+
+      body[dir=rtl] .docs-ml-arrow-back-dir {
+        transform: scaleX(-1)
+      }
+
+      .docs-ml-header-document-title {
+        box-sizing: border-box;
+        line-height: 24px;
+        padding: 0 12px;
+        width: 60%;
+        width: calc(100% - 104px)
+      }
+
+      .docs-ml-header-document-title-text {
+        font-size: 20px;
+        font-weight: 500;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap
+      }
+
+      .docs-ml-header-edit-button {
+        float: right;
+        padding-right: 4px
+      }
+
+      .docs-ml-promotion {
+        background: #fff;
+        bottom: 0;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, .4);
+        font-family: Arial, Helvetica, sans-serif;
+        left: 0;
+        position: fixed;
+        width: 100%
+      }
+
+      .docs-ml-promotion-off-screen {
+        transform: translateY(100%)
+      }
+
+      .docs-ml-promotion-shown {
+        transform: translateY(0);
+        transition: transform 333ms cubic-bezier(.4, 0, .2, 1)
+      }
+
+      .docs-ml-promotion-dismissed {
+        transform: translateY(100%);
+        box-shadow: none
+      }
+
+      .docs-ml-promotion-no-horizontal-scroll {
+        overflow-x: hidden
+      }
+
+      .docs-ml-promotion-header {
+        display: table;
+        padding: 24px 24px 0 24px
+      }
+
+      .docs-ml-promotion-app-icon-container {
+        display: table-cell
+      }
+
+      .docs-ml-promotion-app-icon {
+        height: 36px;
+        width: 36px
+      }
+
+      @media (min-width:600px) {
+        .docs-ml-promotion-app-icon {
+          transform: scale(1.33)
+        }
+      }
+
+      .docs-ml-promotion-text {
+        display: table-cell;
+        padding-left: 20px;
+        vertical-align: top
+      }
+
+      .docs-ml-promotion-text-heading {
+        color: rgba(0, 0, 0, .87);
+        font-size: 16px;
+        font-weight: 700;
+        padding-bottom: 7px
+      }
+
+      .docs-ml-promotion-text-body {
+        color: rgba(0, 0, 0, .87);
+        font-size: 14px
+      }
+
+      .docs-ml-promotion-action-row {
+        float: right;
+        margin-top: 6px;
+        padding: 8px 24px
+      }
+
+      .docs-ml-promotion-action-row-desktop {
+        margin-top: 6px
+      }
+
+      .docs-ml-promotion-action-container {
+        display: inline-block;
+        height: 48px;
+        margin: 6px 4px;
+        vertical-align: middle
+      }
+
+      .docs-ml-promotion-action-button {
+        display: inline-block;
+        font-size: 14px;
+        font-weight: 500;
+        padding: 9px 12px;
+        vertical-align: middle
+      }
+
+      .docs-ml-promotion-action-button-wrapper:focus {
+        outline-color: #d6d6d6
+      }
+
+      .docs-ml-promotion-action-button.docs-ml-promotion-yes-button {
+        background-color: #4285f4;
+        border-radius: 4px;
+        color: #fafafa;
+        border: 1px solid transparent
+      }
+
+      .docs-ml-promotion-action-button.docs-ml-promotion-yes-button:active {
+        background-color: #1967d2
+      }
+
+      .docs-ml-promotion-action-button.docs-ml-promotion-no-button {
+        background-color: #fafafa;
+        color: #5f6368;
+        border-radius: 4px;
+        border: 1px solid #dadce0
+      }
+
+      .docs-ml-promotion-action-button.docs-ml-promotion-no-button:active {
+        background-color: #f5f5f5
+      }
+
+      .docs-ml-promotion.desktop {
+        text-align: center
+      }
+
+      @media (orientation:portrait) {
+        .docs-ml-promotion.desktop {
+          padding-top: 56px;
+          padding-bottom: 80px
+        }
+      }
+
+      @media (orientation:landscape) {
+        .docs-ml-promotion.desktop {
+          padding-top: 36px;
+          padding-bottom: 56px
+        }
+      }
+
+      .docs-ml-promotion-heading-desktop {
+        font-family: Google Sans;
+        font-size: 18px;
+        font-weight: 700;
+        color: #202124;
+        padding-top: 18px;
+        padding-bottom: 10px;
+        line-height: 1.5;
+        max-width: 360px;
+        margin: 0 auto
+      }
+
+      @media (orientation:landscape) {
+        .docs-ml-promotion-heading-desktop {
+          padding-top: 0;
+          max-width: none
+        }
+      }
+
+      .docs-ml-promotion-text-body-desktop {
+        font-size: 14px;
+        line-height: 1.5;
+        color: #5f6368;
+        padding-bottom: 10px
+      }
+
+      .docs-icon.docs-ml-promotion-desktop-icon {
+        height: 40px;
+        width: 40px;
+        transform: scale(2.5);
+        transform-origin: top
+      }
+
+      .docs-icon-ml-promotion-icon-container-desktop {
+        height: 100px;
+        width: 100px;
+        margin-left: auto;
+        margin-right: auto
+      }
+
+      @media (orientation:landscape) {
+        .docs-icon-ml-promotion-icon-container-desktop {
+          display: inline-block;
+          vertical-align: top
+        }
+
+        .docs-ml-promotion-description-desktop {
+          display: inline-block;
+          vertical-align: top;
+          text-align: left;
+          padding-left: 39px;
+          max-width: 645px
+        }
+      }
+
+      @media (orientation:landscape) {
+        .docs-ml-promotion-action-row-desktop {
+          margin-left: -8px
+        }
+      }
+
+      .docs-ml-promotion-action-row-desktop .docs-ml-promotion-action-container {
+        margin: 6px 8px;
+        font-family: Google Sans
+      }
+
+      .docs-ml-promotion-action-row-desktop .docs-ml-promotion-action-button-wrapper:focus {
+        outline: none
+      }
+
+      .docs-ml-promotion-action-button.docs-ml-promotion-yes-button.docs-ml-promotion-app-themed {
+        background-image: none;
+        border: 1px solid transparent !important;
+        border-radius: 4px;
+        box-shadow: none;
+        box-sizing: border-box;
+        font-family: Google Sans, Roboto, RobotoDraft, Helvetica, Arial, sans-serif;
+        font-weight: 500;
+        font-size: 14px;
+        height: 36px;
+        letter-spacing: .25px;
+        line-height: 16px;
+        padding: 9px 24px 11px 24px;
+        background: #1a73e8;
+        color: #fff
+      }
+
+      .docs-ml-promotion-action-button.docs-ml-promotion-yes-button.docs-ml-promotion-app-themed:active {
+        background-image: none;
+        border: 1px solid transparent !important;
+        border-radius: 4px;
+        box-shadow: none;
+        box-sizing: border-box;
+        font-family: Google Sans, Roboto, RobotoDraft, Helvetica, Arial, sans-serif;
+        font-weight: 500;
+        font-size: 14px;
+        height: 36px;
+        letter-spacing: .25px;
+        line-height: 16px;
+        padding: 9px 24px 11px 24px;
+        background: #1a73e8;
+        color: #fff
+      }
+
+      .docs-ml-promotion-action-button.docs-ml-promotion-no-button.docs-ml-promotion-app-themed {
+        border: 1px solid transparent !important;
+        border-radius: 4px;
+        box-shadow: none;
+        box-sizing: border-box;
+        font-family: Google Sans, Roboto, RobotoDraft, Helvetica, Arial, sans-serif;
+        font-weight: 500;
+        font-size: 14px;
+        height: 36px;
+        letter-spacing: .25px;
+        line-height: 16px;
+        padding: 9px 24px 11px 24px;
+        background: #fff;
+        border: 1px solid #dadce0 !important;
+        color: #1a73e8
+      }
+
+      .docs-ml-promotion-action-button-wrapper:focus .docs-ml-promotion-action-button.docs-ml-promotion-yes-button.docs-ml-promotion-app-themed {
+        background-image: none;
+        border: 1px solid transparent !important;
+        border-radius: 4px;
+        box-shadow: none;
+        box-sizing: border-box;
+        font-family: Google Sans, Roboto, RobotoDraft, Helvetica, Arial, sans-serif;
+        font-weight: 500;
+        font-size: 14px;
+        height: 36px;
+        letter-spacing: .25px;
+        line-height: 16px;
+        padding: 9px 24px 11px 24px;
+        background: #1a73e8;
+        color: #fff;
+        background: #5094ed;
+        box-shadow: 0 1px 3px 1px rgba(66, 133, 244, .15)
+      }
+
+      .docs-ml-promotion-action-button-wrapper:focus .docs-ml-promotion-action-button.docs-ml-promotion-no-button.docs-ml-promotion-app-themed {
+        border: 1px solid transparent !important;
+        border-radius: 4px;
+        box-shadow: none;
+        box-sizing: border-box;
+        font-family: Google Sans, Roboto, RobotoDraft, Helvetica, Arial, sans-serif;
+        font-weight: 500;
+        font-size: 14px;
+        height: 36px;
+        letter-spacing: .25px;
+        line-height: 16px;
+        padding: 9px 24px 11px 24px;
+        background: #e9f1fe;
+        border: 1px solid #c1d8fb !important
+      }
+
+      /*# sourceMappingURL=mobileweb_css_ltr.css.map */
+    </style>
+  </head>
+  <body style="">
+    <div class="app-container" style="">
+      <div class="doc-container">
+        <div class="doc" style="border-radius: 5px;margin: 20px;">
+          <style type="text/css">
+            @import url(https://themes.googleusercontent.com/fonts/css?kit=r2AV_6QhJQz_RwUj0ykIsCEbwyFmM5kLQmK14raqtdE);
+          </style>
+          <div class="doc-content" style="background-color:#666666;padding:72pt 72pt 72pt 72pt;max-width:451.4pt;border-radius: 20px;border: 20px solid #666;">
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:center">
+              <span style="color:#000000;font-weight:700;text-decoration:none;vertical-align:baseline;font-size:17pt;font-family:&quot;Mali&quot;;font-style:normal">MR survey - questions, complaints &amp; suggestions</span>
+            </p>
+            <hr>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;height:11pt;text-align:center">
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:17pt;font-family:&quot;Mali&quot;;font-style:normal"></span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;height:11pt;text-align:center">
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:17pt;font-family:&quot;Mali&quot;;font-style:normal"></span>
+            </p>
+            <p class="title" id="h.fl0xv1jr7jpk" style="padding-top:0pt;margin:0;color:#000000;padding-left:0;font-size:26pt;padding-bottom:3pt;line-height:1.15;page-break-after:avoid;font-family:&quot;Arial&quot;;orphans:2;widows:2;text-align:center;padding-right:0">
+              <span style="color:#000000;font-weight:700;text-decoration:none;vertical-align:baseline;font-size:17pt;font-family:&quot;Mali&quot;;font-style:normal">Questions section</span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;height:11pt;text-align:left">
+              <span style="color:#000000;font-weight:700;text-decoration:none;vertical-align:baseline;font-size:17pt;font-family:&quot;Mali&quot;;font-style:normal"></span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:center">
+              <span style="font-size:14pt;font-family:&quot;Mali&quot;;font-weight:700">Question:</span>
+              <span style="font-size:14pt;font-family:&quot;Mali&quot;;font-weight:500"> “regarding interviews: what would u recommend doing if a guest repeated the same sentence they were asked to correct, would u give them a second chance or kick. same </span>
+              <span style="font-size:14pt;font-family:&quot;Mali&quot;;font-weight:500">goes to when</span>
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal"> they only do half of the sentence.”</span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;height:11pt;text-align:center">
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal"></span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:center">
+              <span style="font-size:14pt;font-family:&quot;Mali&quot;;font-weight:700">Answer: </span>
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal">I assume you mean during the grammar test, I would kick them.</span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;height:11pt;text-align:center">
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal"></span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:center">
+              <span style="font-size:12pt">━━━━━</span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;height:11pt;text-align:center">
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal"></span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:center">
+              <span style="font-size:14pt;font-family:&quot;Mali&quot;;font-weight:700">Question:</span>
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal"> Why are some "newer" Heads getting promoted to Management faster than older Heads?</span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;height:11pt;text-align:center">
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal"></span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:center">
+              <span style="font-size:14pt;font-family:&quot;Mali&quot;;font-weight:700">Answer: </span>
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal">This can depend on a lot! Don’t forget that as HRs we do see more than you guys do because we see reports and obviously we have their record. Not everyone that is old has a report against them though, it could be other things like they’re not as active as we would have hoped or we don’t think they’re ready for the next position. </span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;height:11pt;text-align:center">
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal"></span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:center">
+              <span style="font-size:12pt">━━━━━</span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;height:11pt;text-align:left">
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal"></span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:center">
+              <span style="font-size:14pt;font-family:&quot;Mali&quot;;font-weight:700">Question: </span>
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal">Can we appeal a warning we got from a few months ago back to any HR or just the one that sent it?</span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;height:11pt;text-align:center">
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal"></span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:center">
+              <span style="font-size:14pt;font-family:&quot;Mali&quot;;font-weight:700">Answer: </span>
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal">You can only appeal a warning if it is false or if you think that the HR team has completely misunderstood the situation. You can send the appeal to any HR.</span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;height:11pt;text-align:center">
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal"></span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:center">
+              <span style="font-size:12pt">━━━━━</span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;height:11pt;text-align:center">
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal"></span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:center">
+              <span style="font-size:14pt;font-family:&quot;Mali&quot;;font-weight:700">Question:</span>
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal"> Will there be any upcoming events that MRs can help out in?</span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;height:11pt;text-align:center">
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal"></span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:center">
+              <span style="font-size:14pt;font-family:&quot;Mali&quot;;font-weight:700">Answer: </span>
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal">As of writing this, not at the moment. There are other things to look forward to though that I won’t say yet!!</span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;height:11pt;text-align:center">
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal"></span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:center">
+              <span style="font-size:12pt">━━━━━</span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;height:11pt;text-align:center">
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal"></span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:center">
+              <span style="font-size:14pt;font-family:&quot;Mali&quot;;font-weight:700">Question: </span>
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal">If we go on holidays (say for a few weeks 2-3) would we need to ask for our timezones to be changed or not?</span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;height:11pt;text-align:center">
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal"></span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:center">
+              <span style="font-size:14pt;font-family:&quot;Mali&quot;;font-weight:700">Answer: </span>
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal">Nope!</span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;height:11pt;text-align:center">
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal"></span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:center">
+              <span style="font-size:12pt">━━━━━</span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;height:11pt;text-align:center">
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal"></span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:center">
+              <span style="font-size:14pt;font-family:&quot;Mali&quot;;font-weight:700">Question:</span>
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal"> What is the outlook of events for the coming months; is there any planned or being planned?</span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;height:11pt;text-align:center">
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal"></span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:center">
+              <span style="font-size:14pt;font-family:&quot;Mali&quot;;font-weight:700">Answer: </span>
+              <span style="font-size:14pt;font-family:&quot;Mali&quot;;font-weight:500">At the minute, no. At the time of typing this, we have just finished the campout </span>
+              <span style="font-size:14pt;font-family:&quot;Mali&quot;;font-weight:500">weekened</span>
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal">. But can definitely assure you that there will be more to come, just nothing planned yet.</span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;height:11pt;text-align:center">
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal"></span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:center">
+              <span style="font-size:12pt">━━━━━</span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;height:11pt;text-align:center">
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal"></span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:center">
+              <span style="font-size:14pt;font-family:&quot;Mali&quot;;font-weight:700">Question: </span>
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal">I feel like we haven’t been doing much to get new alliances. When will that happen?</span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;height:11pt;text-align:center">
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal"></span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:center">
+              <span style="font-size:14pt;font-family:&quot;Mali&quot;;font-weight:700">Answer: </span>
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal">Getting new alliances is quite the process, ever since the last meeting we have actually been working towards getting new alliances, there’s just a lot to do. However, I am happy to say that there are currently two groups under review to become potential alliances and we plan to have things finalised by the end of this month.</span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;height:11pt;text-align:center">
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal"></span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:center">
+              <span style="font-size:12pt">━━━━━</span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;height:11pt;text-align:center">
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal"></span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:center">
+              <span style="font-size:14pt;font-family:&quot;Mali&quot;;font-weight:700">Question: </span>
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal">Is grammar required when answering tickets, answering questions in the questions channel and in the notices channel?</span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;height:11pt;text-align:center">
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal"></span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:center">
+              <span style="font-size:14pt;font-family:&quot;Mali&quot;;font-weight:700">Answer: </span>
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal">Yes!</span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;height:11pt;text-align:center">
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal"></span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:center">
+              <span style="font-size:12pt">━━━━━</span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;height:11pt;text-align:center">
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal"></span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:center">
+              <span style="font-size:14pt;font-family:&quot;Mali&quot;;font-weight:700">Question: </span>
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal">does changing our usernames affect if we're gonna be promoted or not? Since it looks like if you change your username to something that's not similar to your name or previous name for example people would forget u</span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;height:11pt;text-align:center">
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal"></span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:center">
+              <span style="font-size:14pt;font-family:&quot;Mali&quot;;font-weight:700">Answer: </span>
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal">Nope! We have you guys put your username changes in mr notices so that we’re aware and there’s also some behind the scenes stuff that you guys aren’t aware of.</span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;height:11pt;text-align:center">
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal"></span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:center">
+              <span style="font-size:12pt">━━━━━</span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;height:11pt;text-align:center">
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal"></span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:center">
+              <span style="font-size:14pt;font-family:&quot;Mali&quot;;font-weight:700">Question: </span>
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal">Why were some of the submissions not addressed in the last meeting?</span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;height:11pt;text-align:center">
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal"></span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:center">
+              <span style="font-size:14pt;font-family:&quot;Mali&quot;;font-weight:700">Answer: </span>
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal">This could’ve been for a few reasons, I either thought that I had answered your question/complaint/suggestion from something that someone else had said already. The information could’ve been confidential and lastly, it could’ve simply been because the HR team was still deciding what would happen or just issues with communication but that has 100% improved since the last meeting.</span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;height:11pt;text-align:center">
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal"></span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:center">
+              <span style="font-size:12pt">━━━━━</span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;height:11pt;text-align:center">
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal"></span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:center">
+              <span style="font-size:14pt;font-family:&quot;Mali&quot;;font-weight:700">Question: </span>
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal">Any updates about V7?</span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;height:11pt;text-align:center">
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal"></span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:center">
+              <span style="font-size:14pt;font-family:&quot;Mali&quot;;font-weight:700">Answer: </span>
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal">No updates at the moment, if you weren’t here at the last meeting then I mentioned how in the summer we would be able to look forward to things. I believe Baby and Bear will come out with leaks when they’re ready but can’t guarantee that that will happen, that’s up to them.</span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;height:11pt;text-align:center">
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal"></span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:center">
+              <span style="font-size:12pt">━━━━━</span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;height:11pt;text-align:center">
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal"></span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:center">
+              <span style="font-size:14pt;font-family:&quot;Mali&quot;;font-weight:700">Question:</span>
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal"> May the staff limit in servers be please clarified for each rank?</span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;height:11pt;text-align:center">
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal"></span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:center">
+              <span style="font-size:14pt;font-family:&quot;Mali&quot;;font-weight:700">Answer: </span>
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal">At trainings: 4 management and 4 heads (doesn’t matter what head rank)</span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:center">
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal">At the hotel: 3 of any MR rank and it increases to 4 when there’s a mass shift.</span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;height:11pt;text-align:center">
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal"></span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:center">
+              <span style="font-size:12pt">━━━━━</span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;height:11pt;text-align:center">
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal"></span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:center">
+              <span style="font-size:14pt;font-family:&quot;Mali&quot;;font-weight:700">Question: </span>
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal">With the new version of the hotel, will there be new uniforms or not?</span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;height:11pt;text-align:center">
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal"></span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:center">
+              <span style="font-size:14pt;font-family:&quot;Mali&quot;;font-weight:700">Answer: </span>
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal">I’m not 100% sure however I would hope so!</span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;height:11pt;text-align:center">
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal"></span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:center">
+              <span style="font-size:12pt">━━━━━</span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;height:11pt;text-align:center">
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal"></span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:center">
+              <span style="font-size:14pt;font-family:&quot;Mali&quot;;font-weight:700">Question: </span>
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal">How do promotions work?</span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;height:11pt;text-align:center">
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal"></span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:center">
+              <span style="font-size:14pt;font-family:&quot;Mali&quot;;font-weight:700">Answer: </span>
+              <span style="font-size:14pt;font-family:&quot;Mali&quot;;font-weight:500">This was announced a long time ago but I thought it would be worth bringing it up again since there seems to be some confusion on the process of </span>
+              <span style="font-size:14pt;font-family:&quot;Mali&quot;;font-weight:500">promoting</span>
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal">.</span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;height:11pt;text-align:center">
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal"></span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:center">
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal">When an HR wants to promote someone, they can’t just go and promote them, there’s an entire process to it. Multiple HRs need to agree on it and then a BOD needs to approve it. If there’s someone we want to promote and they happen to be friends with an HR then we give them the opportunity to promote.</span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;height:11pt;text-align:center">
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal"></span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:center">
+              <span style="font-size:12pt">━━━━━</span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;height:11pt;text-align:center">
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal"></span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:center">
+              <span style="font-size:14pt;font-family:&quot;Mali&quot;;font-weight:700">Question:</span>
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal"> Does being friends with an HR help to get promoted?</span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;height:11pt;text-align:center">
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal"></span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:center">
+              <span style="font-size:14pt;font-family:&quot;Mali&quot;;font-weight:700">Answer: </span>
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal">No. Being friends with an HR could be a negative more than a positive thing. We get to see how you speak about LRs and other MRs and the way you speak about your job overall. </span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;height:11pt;text-align:center">
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal"></span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;height:11pt;text-align:center">
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal"></span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:center">
+              <span style="font-size:14pt;font-family:&quot;Mali&quot;;font-weight:700">Question: </span>
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal">Do you HRs keep track of MRs attendance when MRs attend training and interview to help out, attend shifts at the hotel? How would you ever recognize our hard-work and dedication if you don't?</span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;height:11pt;text-align:center">
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal"></span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:center">
+              <span style="font-size:14pt;font-family:&quot;Mali&quot;;font-weight:700">Answer: </span>
+              <span style="font-size:14pt;font-family:&quot;Mali&quot;;font-weight:500">We have more than one different </span>
+              <span style="font-size:14pt;font-family:&quot;Mali&quot;;font-weight:500">ways</span>
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal"> of tracking activity, I won’t share them though because it is HR information. </span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;height:11pt;text-align:center">
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal"></span>
+            </p>
+            <p class="title" id="h.599pgbx5uiw5" style="padding-top:0pt;margin:0;color:#000000;padding-left:0;font-size:26pt;padding-bottom:3pt;line-height:1.15;page-break-after:avoid;font-family:&quot;Arial&quot;;orphans:2;widows:2;text-align:center;padding-right:0">
+              <span style="color:#000000;font-weight:700;text-decoration:none;vertical-align:baseline;font-size:17pt;font-family:&quot;Mali&quot;;font-style:normal">Complaints section</span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;height:11pt;text-align:center">
+              <span style="color:#000000;font-weight:700;text-decoration:none;vertical-align:baseline;font-size:17pt;font-family:&quot;Mali&quot;;font-style:normal"></span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:center">
+              <span style="font-size:14pt;font-family:&quot;Mali&quot;;font-weight:700">Complaint:</span>
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal"> Still no change in the exclusion of individuals within MR chats, can actions be taken or something as it’s causing more and more people to resign?</span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;height:11pt;text-align:center">
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal"></span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:center">
+              <span style="font-size:14pt;font-family:&quot;Mali&quot;;font-weight:700">Answer: </span>
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal">If you were in the position of us HRs, what would you do? We can’t really go to a group of people and tell them they can’t speak in mr lounge as a group anymore because people don’t like it. We’ve tried to fix the exclusion people feel and it seems like whatever we do, it never helps.</span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;height:11pt;text-align:center">
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal"></span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:center">
+              <span style="font-size:12pt">━━━━━</span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;height:11pt;text-align:center">
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal"></span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:center">
+              <span style="font-size:14pt;font-family:&quot;Mali&quot;;font-weight:700">Complaint: </span>
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal">HRs admin abusing- giving friends admin at sessions when their rank only allows moderator so they can abuse btools. Nobody can say that isn’t favouritism and completely unfair to every other MR who work hard at sessions</span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;height:11pt;text-align:center">
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal"></span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:center">
+              <span style="font-size:14pt;font-family:&quot;Mali&quot;;font-weight:700">Answer: </span>
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal">Working hard doesn’t equal receiving btools but either way, you can report these things if you think that it’s abuse. The only things I can think of where an MR was given btools was to make something for LRs or for promotion purposes.</span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;height:11pt;text-align:center">
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal"></span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:center">
+              <span style="font-size:12pt">━━━━━</span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;height:11pt;text-align:center">
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal"></span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:center">
+              <span style="font-size:14pt;font-family:&quot;Mali&quot;;font-weight:700">Complaint: </span>
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal">A lot of bias in mr-lounge and it’s always the same people talking or it’s dry. The same 2-3 HR’s with 1 senior and 3 Management. I’m aware it’s been reported but I don’t think any actions were taken. I just wish this chat was more welcoming.</span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;height:11pt;text-align:center">
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal"></span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:center">
+              <span style="font-size:14pt;font-family:&quot;Mali&quot;;font-weight:700">Answer: </span>
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal">Again, it’s hard for us to know what to do, we have tried. But also saying “it’s always the same people talking” we can’t tell people not to speak and you can’t exactly report someone for speaking. Yes, you can report for them purposely excluding people but not for talking in a chat.</span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;height:11pt;text-align:center">
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal"></span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:center">
+              <span style="font-size:12pt">━━━━━</span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;height:11pt;text-align:center">
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal"></span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:center">
+              <span style="font-size:14pt;font-family:&quot;Mali&quot;;font-weight:700">Complaint: </span>
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal">Punish people for ignoring people</span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;height:11pt;text-align:center">
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal"></span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:center">
+              <span style="font-size:14pt;font-family:&quot;Mali&quot;;font-weight:700">Answer: </span>
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal">This would be hard to prove. Even myself, I’ve accidentally ignored people because a chat is going too fast or I leave the chat for a few seconds. If you have good enough proof that you’re being ignored on purpose then report it!</span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;height:11pt;text-align:center">
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal"></span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:center">
+              <span style="font-size:12pt">━━━━━</span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;height:11pt;text-align:center">
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal"></span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:center">
+              <span style="font-size:14pt;font-family:&quot;Mali&quot;;font-weight:700">Complaint:</span>
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal"> Don’t allow HRs to abuse their power it happens so much</span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;height:11pt;text-align:center">
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal"></span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:center">
+              <span style="font-size:14pt;font-family:&quot;Mali&quot;;font-weight:700">Answer: </span>
+              <span style="font-size:14pt;font-family:&quot;Mali&quot;;font-weight:500">Same sort of thing with the btools, you need to report that if you think they’re abusing. We can’t do anything if we don’t know </span>
+              <span style="font-size:14pt;font-family:&quot;Mali&quot;;font-weight:500">its</span>
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal"> happened. </span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;height:11pt;text-align:center">
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal"></span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:center">
+              <span style="font-size:12pt">━━━━━</span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;height:11pt;text-align:center">
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal"></span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:center">
+              <span style="font-size:14pt;font-family:&quot;Mali&quot;;font-weight:700">Complaint:</span>
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal"> some HRs are bias towards other managers letting them join sessions midway thru or always letting them be a manager for their session</span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;height:11pt;text-align:center">
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal"></span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:center">
+              <span style="font-size:14pt;font-family:&quot;Mali&quot;;font-weight:700">Answer: </span>
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal">Seniors+ are allowed to let people into their sessions. Anyone can join, not just friends so if you want to come then just ask, however do note that some HRs and seniors just don’t like people to join and some do, it will depend on who you ask.</span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;height:11pt;text-align:center">
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal"></span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;height:11pt;text-align:center">
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal"></span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:center">
+              <span style="font-size:12pt">━━━━━</span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;height:11pt;text-align:left">
+              <span style="color:#000000;font-weight:700;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal"></span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:center">
+              <span style="font-size:14pt;font-family:&quot;Mali&quot;;font-weight:700">Complaint:</span>
+              <span style="font-size:14pt;font-family:&quot;Mali&quot;;font-weight:500"> We still lack Senior </span>
+              <span style="font-size:14pt;font-family:&quot;Mali&quot;;font-weight:500">management+</span>
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal"> activity. There’s a lot of us (Management and below) who have a hard time when trying to deal with offenders that keep rejoining and when we try to get a senior+ to ban so many of them are unavailable.</span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;height:11pt;text-align:left">
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal"></span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:center">
+              <span style="font-size:14pt;font-family:&quot;Mali&quot;;font-weight:700">Answer: </span>
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal">I’ve spoken to multiple HRs about this, we hardly ever get pings for assistance. You guys are allowed to ping us for bans and other things.</span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;height:11pt;text-align:center">
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal"></span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:center">
+              <span style="font-size:12pt">━━━━━</span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;height:11pt;text-align:center">
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal"></span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:center">
+              <span style="font-size:14pt;font-family:&quot;Mali&quot;;font-weight:700">Complaint:</span>
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal"> one thing I think that needs to be addressed is behaviour towards LRs. One thing I've noticed from a couple MRs, one in particular though, is complaining about such small things like LRs standing next to them, sending friend requests, asking them how their day has been. Most of the time it's in vc, like they bring it up in conversation, but it kinda just makes it seem like they're implying that all LRs are "promo-thirsty" when all they're probably trying to do is be nice or make friends.</span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;height:11pt;text-align:center">
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal"></span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:center">
+              <span style="font-size:14pt;font-family:&quot;Mali&quot;;font-weight:700">Answer: </span>
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal">If you’re able to get proof then definitely report but I understand how that would be hard to get. Keep in mind that a lot of these LRs are young and they don’t mean any harm a lot of the time. <br>
+              </span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:center">
+              <span style="font-size:12pt">━━━━━</span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;height:11pt;text-align:center">
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal"></span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:center">
+              <span style="font-size:14pt;font-family:&quot;Mali&quot;;font-weight:700">Complaint:</span>
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal"> There is still a lot of people being biassed, I haven’t seen much of an improvement from there. As before, it’s managements to HRs. I know we’re all friends here and just want to have fun, but there has been times were managements would stand on the hosts line which I don’t get as to why they feel the need to do that</span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;height:11pt;text-align:center">
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal"></span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:center">
+              <span style="font-size:14pt;font-family:&quot;Mali&quot;;font-weight:700">Answer: </span>
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal">When reporting bias, it can be hard to get proof and we have the rule that you can’t report old proof however if you’re in need of time to collect proof then that’s completely fine and understandable because somethings are done over time and it’s just not possible to get enough proof then and there. Sometimes it isn’t bias and people just randomly go stand on the line which they shouldn’t be doing however we can’t do a lot about someone just standing on a line except remind them to be professional.</span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;height:11pt;text-align:center">
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal"></span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:center">
+              <span style="font-size:12pt">━━━━━</span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;height:11pt;text-align:center">
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal"></span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:center">
+              <span style="font-size:14pt;font-family:&quot;Mali&quot;;font-weight:700">Complaint: </span>
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal">There should be some sort of rule set for the MR ticket system, I’ve been seeing a lot of MRs take more than 1 ticket at a time making it harder for others to answer and then they would abandon a ticket to help out another having that server be quite chaotic</span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;height:11pt;text-align:center">
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal"></span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:center">
+              <span style="font-size:14pt;font-family:&quot;Mali&quot;;font-weight:700">Answer: </span>
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal">I’ve spoken to the HR team about this and we have come to an agreement that you are now only allowed to take 1 ticket at a time. If this is confusing, if you answer one ticket then you’re not allowed to answer another until that original ticket has been dealt with and closed.</span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;height:11pt;text-align:center">
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal"></span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:center">
+              <span style="font-size:12pt">━━━━━</span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;height:11pt;text-align:center">
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal"></span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:center">
+              <span style="font-size:14pt;font-family:&quot;Mali&quot;;font-weight:700">Complaint: </span>
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal">We haven’t been told what the HRs have done to ensure they’re capable of following the rules they make.</span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;height:11pt;text-align:center">
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal"></span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:center">
+              <span style="font-size:14pt;font-family:&quot;Mali&quot;;font-weight:700">Answer: </span>
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal">There isn’t much I can say about this unless I were to leak to you however we did create the anonymous reporting form, if something were to happen then one of us would report it via that or just straight to the founders. </span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;height:11pt;text-align:center">
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal"></span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:center">
+              <span style="font-size:12pt">━━━━━</span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;height:11pt;text-align:center">
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal"></span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:center">
+              <span style="font-size:14pt;font-family:&quot;Mali&quot;;font-weight:700">Complaint:</span>
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal"> I think there is some sort of biased timezone stuff happening that is not really paid attention to where most MRs who get promoted are usually those who are in EST, CST, PST &amp; BST timezones but it makes sense because all HRs are in those timezones and it's just right that you only see those who have the same or close timezones with you. I hope this changes and you guys will finally promote according to hard work, dedication, good behavior, activity, excellent grammar, etc etc.</span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;height:11pt;text-align:center">
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal"></span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:center">
+              <span style="font-size:14pt;font-family:&quot;Mali&quot;;font-weight:700">Answer: </span>
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal">I can see what you mean, the majority of MRs are from those time zones but also those are just the main time zones that people are from and that’s something we can’t really control. You’re more than welcome to promo suggest people if you think that we haven’t noticed them! </span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;height:11pt;text-align:center">
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal"></span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:center">
+              <span style="font-size:12pt">━━━━━</span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;height:11pt;text-align:center">
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal"></span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:center">
+              <span style="font-size:14pt;font-family:&quot;Mali&quot;;font-weight:700">Complaint: </span>
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal">About good behavior, there are MRs who sound very rude and unprofessional especially on Discord #mr-lounge and #general-discussion regardless if they are just talking with friends and all that.</span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;height:11pt;text-align:center">
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal"></span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:center">
+              <span style="font-size:14pt;font-family:&quot;Mali&quot;;font-weight:700">Answer: </span>
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal">You’re more than welcome to use the report form. I can’t promise that you’ll see a punishment like a suspension or termination because we do other things like reminders and warnings.</span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;height:11pt;text-align:center">
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal"></span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:center">
+              <span style="font-size:12pt">━━━━━</span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;height:11pt;text-align:center">
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal"></span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:center">
+              <span style="font-size:14pt;font-family:&quot;Mali&quot;;font-weight:700">Complaint: </span>
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal">Another complaint I have is the way HRs deal with minor issues. If someone breaks a tiny rule for the very first time and it’s extremely minor, then they should not be threatened with a written warning.</span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;height:11pt;text-align:center">
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal"></span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:center">
+              <span style="font-size:14pt;font-family:&quot;Mali&quot;;font-weight:700">Answer: </span>
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal">Depends what you mean by minor issues. Again, don’t forget that we can see their record and if they’ve done anything similar before. We also obviously see the report and the extent to what they’ve done. Also, I really don’t think threatened is the right word, if you were given a reminder and you were told it could lead to a written warning I think that would be better than not telling you at all what could happen.</span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;height:11pt;text-align:center">
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal"></span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:center">
+              <span style="font-size:12pt">━━━━━</span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;height:11pt;text-align:center">
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal"></span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:center">
+              <span style="font-size:14pt;font-family:&quot;Mali&quot;;font-weight:700">Complaint: </span>
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal">I feel that an anonymous group of MRs are luckier than others and receive promotions sooner. This anonymous group was noticed earlier by the HRs because they were in the same servers with them at the hotel shifts or while attending interview and training, that allowed an advantage over others.</span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;height:11pt;text-align:center">
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal"></span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:center">
+              <span style="font-size:14pt;font-family:&quot;Mali&quot;;font-weight:700">Answer: </span>
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal">Being in HRs servers isn’t always a good thing unless we’re joining you first. So if you were to always join us, we do notice and we do count that as being host bias if we’re hosting but of course you can’t always help it, just make sure you’re not actively attempting to follow us.</span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;height:11pt;text-align:center">
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal"></span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:center">
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal">As for the group of people, I’m not sure who you’re talking about but I’m going over how promotions work later if I haven’t already.</span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;height:11pt;text-align:center">
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal"></span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:center">
+              <span style="font-size:12pt">━━━━━</span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;height:11pt;text-align:center">
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal"></span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:center">
+              <span style="font-size:14pt;font-family:&quot;Mali&quot;;font-weight:700">Complaint: </span>
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal">i think there have been a bit too many head promos than "normal" and i don't know anymore like i doubt if the promo was based on good grammar, activity, dedication and hard work or just activity alone because they're always present at sessions.</span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;height:11pt;text-align:center">
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal"></span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:center">
+              <span style="font-size:14pt;font-family:&quot;Mali&quot;;font-weight:700">Answer: </span>
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal">I wouldn’t say that there is a normal amount of promotions, it’s just whenever we notice someone and we’re able to get it approved. We’re not that strict on grammar, remember that not everyone is fluent in English and we look at more of their activity and how professional they are.</span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;height:11pt;text-align:center">
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal"></span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:center">
+              <span style="font-size:12pt">━━━━━</span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;height:11pt;text-align:center">
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal"></span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:center">
+              <span style="font-size:14pt;font-family:&quot;Mali&quot;;font-weight:700">Complaint: </span>
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal">it has also come to my attention that head to mgm promos are getting confusing unlike before because even those who don't have much knowledge about the rules and still could use some time for improvement just get promoted all of a sudden.</span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;height:11pt;text-align:center">
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal"></span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:center">
+              <span style="font-size:14pt;font-family:&quot;Mali&quot;;font-weight:700">Answer: </span>
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal">I don’t think it’s fair to say that you think they don’t have much knowledge about the rules, you don’t know what they know and again, promotions have to get approved so it’s more than 1 person that thinks that the person deserves it.</span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;height:11pt;text-align:center">
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal"></span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;height:11pt;text-align:center">
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal"></span>
+            </p>
+            <p class="title" id="h.91egretpxj58" style="padding-top:0pt;margin:0;color:#000000;padding-left:0;font-size:26pt;padding-bottom:3pt;line-height:1.15;page-break-after:avoid;font-family:&quot;Arial&quot;;orphans:2;widows:2;text-align:center;padding-right:0">
+              <span style="color:#000000;font-weight:700;text-decoration:none;vertical-align:baseline;font-size:17pt;font-family:&quot;Mali&quot;;font-style:normal">Suggestions section</span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;height:11pt;text-align:center">
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:17pt;font-family:&quot;Mali&quot;;font-style:normal"></span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:center">
+              <span style="font-size:14pt;font-family:&quot;Mali&quot;;font-weight:700">Suggestion: </span>
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal">I think an important suggestion is that we could possibly have is MR of the month or week and LR of the month or week. The benefits of that would bring the whole team to be more active and everyone would want to get it. Another benefit is this would be having more staff at the hotel working and more MRs at interviews or trainings when we are short on staff.</span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;height:11pt;text-align:center">
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal"></span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:center">
+              <span style="font-size:14pt;font-family:&quot;Mali&quot;;font-weight:700">Answer: </span>
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal">This was brought up when we had the last MR survey, the HRs discussed it and we decided that there were more negatives than positives to this. We said that this would probably create competition, although it can motivate MRs, it can and will probably demotivate MRs that are active but don’t get MR month of the position. This could then also promote people to go against rule 6 which is to not overwork yourself. </span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;height:11pt;text-align:center">
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal"></span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:center">
+              <span style="font-size:12pt">━━━━━</span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;height:11pt;text-align:center">
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal"></span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:center">
+              <span style="font-size:14pt;font-family:&quot;Mali&quot;;font-weight:700">Suggestion:</span>
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal"> Maybe try to put another role (for Head of Security) as Head of Security/ Services doesn't stick up and it's not necessary to get sticked. So, in other words, I think it's the best to have 3 Discord Roles (Heads of Receptionist, Heads of Security and Heads of Services).</span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;height:11pt;text-align:center">
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal"></span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:center">
+              <span style="font-size:14pt;font-family:&quot;Mali&quot;;font-weight:700">Answer: </span>
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal">The HR team actually does agree with this! The only thing is that we would have to get permission from Baby and Bear as they would have to change a lot in the Discord and with Bloxlink, things like in-game scripting with the slock system, team systems at the hotel and a lot more. </span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;height:11pt;text-align:center">
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal"></span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:center">
+              <span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:12pt;font-family:&quot;Arial&quot;;font-style:normal">━━━━━</span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;height:11pt;text-align:center">
+              <span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:12pt;font-family:&quot;Arial&quot;;font-style:normal"></span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:center">
+              <span style="font-size:14pt;font-family:&quot;Mali&quot;;font-weight:700">Suggestion: </span>
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal">not sure if this has been done before (i believe just in mr-discussion) however there should be an mr announcement regarding which are minor grammar mistakes and which are not.</span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;height:11pt;text-align:center">
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal"></span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:center">
+              <span style="font-size:14pt;font-family:&quot;Mali&quot;;font-weight:700">Answer: </span>
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal">This was done in public announcements and mr discussion like you said, I don’t believe there would be a need for another announcement unless that’s something a lot of people want. They can always refer to the pinned message in mr discussion and the one from announcements.</span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;height:11pt;text-align:center">
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal"></span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:center">
+              <span style="font-size:12pt">━━━━━</span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;height:11pt;text-align:center">
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal"></span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:center">
+              <span style="font-size:14pt;font-family:&quot;Mali&quot;;font-weight:700">Suggestion: </span>
+              <span style="font-size:14pt;font-family:&quot;Mali&quot;;font-weight:500">i think</span>
+              <span style="font-size:14pt;font-family:&quot;Mali&quot;;font-weight:500"></span>
+              <span style="font-size:14pt;font-family:&quot;Mali&quot;;font-weight:500">its</span>
+              <span style="font-size:14pt;font-family:&quot;Mali&quot;;font-weight:500"> right to also have an </span>
+              <span style="font-size:14pt;font-family:&quot;Mali&quot;;font-weight:500">lr announcement</span>
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal"> about changes. for example, the changed rule of offensive usernames because they do not know</span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;height:11pt;text-align:center">
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal"></span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:center">
+              <span style="font-size:14pt;font-family:&quot;Mali&quot;;font-weight:700">Answer: </span>
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal">This wasn’t done in fear that this would create a spike in people having offensive usernames. Instead, you’re more than welcome to tell them that it has changed.</span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;height:11pt;text-align:center">
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal"></span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:center">
+              <span style="font-size:12pt">━━━━━</span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;height:11pt;text-align:center">
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal"></span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:center">
+              <span style="font-size:14pt;font-family:&quot;Mali&quot;;font-weight:700">Suggestion:</span>
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal"> Could we possibly adjust the rule about joining sessions early and perhaps say MRs arent allowed to join until around 20 minutes prior to the session starting? Although 40 minutes is a great improvement compared to when people would join over an hour early it is still quite a bit of time and in my opinion it’s just unnecessary having to wait in a server for 40 minutes before the session even begins</span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;height:11pt;text-align:center">
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal"></span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:center">
+              <span style="font-size:14pt;font-family:&quot;Mali&quot;;font-weight:700">Answer: </span>
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal">At the time of writing this, there has been no announcement about this however the HR team has decided to change this rule so that you now can’t join 40 minutes early and can only join 30 minutes early. If there has been no announcement about this already, there will be one shortly.</span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;height:11pt;text-align:center">
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal"></span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:center">
+              <span style="font-size:12pt">━━━━━</span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;height:11pt;text-align:center">
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal"></span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:center">
+              <span style="font-size:14pt;font-family:&quot;Mali&quot;;font-weight:700">Suggestion: </span>
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal">Implement a minimum time that HRs can put for session notice, I think there was a session the other day that was put on the trello less than 10-15 minutes before the session started.</span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;height:11pt;text-align:left">
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal"></span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:center">
+              <span style="font-size:14pt;font-family:&quot;Mali&quot;;font-weight:700">Answer:</span>
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal"> The HR team has discussed this and we have decided that there won’t be a minimum time that we can set sessions. You aren’t required to attend that session and there will be more to go to. Setting sessions early also avoids our servers being crashed. </span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;height:11pt;text-align:center">
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal"></span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:center">
+              <span style="font-size:12pt">━━━━━</span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;height:11pt;text-align:center">
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal"></span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:center">
+              <span style="font-size:14pt;font-family:&quot;Mali&quot;;font-weight:700">Suggestion: </span>
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal">Use the group shout more / make it mandatory for HRs to use the group shout.</span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;height:11pt;text-align:center">
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal"></span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:center">
+              <span style="font-size:14pt;font-family:&quot;Mali&quot;;font-weight:700">Answer: </span>
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal">This was discussed with HRs and we have said this won’t happen for a few reasons. We aren’t always available to do the group shout, we get quite busy when it comes to hosting sometimes and the group shout can tag a lot. We have the schedule at all of our games which would be in the person’s timezone.</span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;height:11pt;text-align:center">
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal"></span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:center">
+              <span style="font-size:12pt">━━━━━</span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;height:11pt;text-align:center">
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal"></span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:center">
+              <span style="font-size:14pt;font-family:&quot;Mali&quot;;font-weight:700">Suggestion: </span>
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal">More MR game nights. When I say "more," I mean at least once weekly. These provide times for MRs+ to become closer with each other. Although this would be great, I do not want this to be a requirement that a host has to worry about each week because of the pressure that hosts may experience.</span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;height:11pt;text-align:center">
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal"></span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:center">
+              <span style="font-size:14pt;font-family:&quot;Mali&quot;;font-weight:700">Answer</span>
+              <span style="font-size:14pt;font-family:&quot;Mali&quot;;font-weight:700">: </span>
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal">This could become a thing but it’s definitely going to be an optional thing for Seniors+ for a few reasons. I’m sure we’ve all just been busy with exams and school at the moment.</span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;height:11pt;text-align:center">
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal"></span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:center">
+              <span style="font-size:12pt">━━━━━</span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;height:11pt;text-align:center">
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal"></span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:center">
+              <span style="font-size:14pt;font-family:&quot;Mali&quot;;font-weight:700">Suggestion: </span>
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal">I won’t put the entire thing but there were some dev suggestions.</span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;height:11pt;text-align:center">
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal"></span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:center">
+              <span style="font-size:14pt;font-family:&quot;Mali&quot;;font-weight:700">Answer: </span>
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal">Dev suggestions are fine, it's just something that we can’t really give a timeline for when you can expect something because we have to go through Baby and Bear and they might be busy or just working on other things. </span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;height:11pt;text-align:center">
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal"></span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:center">
+              <span style="font-size:12pt">━━━━━</span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;height:11pt;text-align:center">
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal"></span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:center">
+              <span style="font-size:14pt;font-family:&quot;Mali&quot;;font-weight:700">Suggestion:</span>
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal"> Add a claim button for tickets, there have been way too many times when I answer a ticket and another MR DMs me saying they were gonna answer that ticket.</span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;height:11pt;text-align:center">
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal"></span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:center">
+              <span style="font-size:14pt;font-family:&quot;Mali&quot;;font-weight:700">Answer: </span>
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal">This isn’t something we can do unless we were to make our own ticket bot. </span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;height:11pt;text-align:center">
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal"></span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:center">
+              <span style="font-size:12pt">━━━━━</span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;height:11pt;text-align:center">
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal"></span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:center">
+              <span style="font-size:14pt;font-family:&quot;Mali&quot;;font-weight:700">Suggestion: </span>
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal">I suggest as MRs we should get more breaks like the holiday break that we had in December. Particularly during the exam season as most MRs will be having exams and won’t be wasting notice time for a reason that can’t be controlled.</span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;height:11pt;text-align:center">
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal"></span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:center">
+              <span style="font-size:14pt;font-family:&quot;Mali&quot;;font-weight:700">Answer: </span>
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal">I’ve spoken to the HR team about this and we did say that we weren’t going to change this because you guys are more than welcome to extend your inactive notices and I know there’s a limit to how much you can go on notice for but if you DM an HR and just ask us to extend it then we’re probably not going to say no.</span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;height:11pt;text-align:center">
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal"></span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:center">
+              <span style="font-size:12pt">━━━━━</span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;height:11pt;text-align:center">
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal"></span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:center">
+              <span style="font-size:14pt;font-family:&quot;Mali&quot;;font-weight:700">Suggestion:</span>
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal"> More clarification on where grammar is required within the discord server. 🙏</span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;height:11pt;text-align:center">
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal"></span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:center">
+              <span style="font-size:14pt;font-family:&quot;Mali&quot;;font-weight:700">Answer:</span>
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal"> Grammar is needed in the questions channel, notices channel and tickets.</span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;height:11pt;text-align:center">
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal"></span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:center">
+              <span style="font-size:12pt">━━━━━</span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;height:11pt;text-align:center">
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal"></span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:center">
+              <span style="font-size:14pt;font-family:&quot;Mali&quot;;font-weight:700">Suggestion: </span>
+              <span style="font-size:14pt;font-family:&quot;Mali&quot;;font-weight:500">This may never happen but I feel as if managers should get the ban command at the hotel. They did work their way up from LR to head to manager and I think that’s enough to trust them. I get seniors aren’t able to be available 24/7 but I feel like managers should have a temporary </span>
+              <span style="font-size:14pt;font-family:&quot;Mali&quot;;font-weight:500">ban command just</span>
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal"> to see how it goes from there.</span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;height:11pt;text-align:center">
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal"></span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:center">
+              <span style="font-size:14pt;font-family:&quot;Mali&quot;;font-weight:700">Answer: </span>
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal">Not sure when this was brought up but when it was, it was a definite no from the HR team. You have worked your way up however we do still have people that abuse, although it is rare, we’d rather have it as a Senior thing only. Another thing would be that we want to keep the difference between Management and Senior Management different.</span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;height:11pt;text-align:center">
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal"></span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:center">
+              <span style="font-size:12pt">━━━━━</span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;height:11pt;text-align:center">
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal"></span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:center">
+              <span style="font-size:14pt;font-family:&quot;Mali&quot;;font-weight:700">Suggestion:</span>
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal"> A Senior Ticket System. This would be extremely useful when needing a senior to ban, as it can sometimes take a while for a Senior+ to respond to a ban request.</span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;height:11pt;text-align:center">
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal"></span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:center">
+              <span style="font-size:14pt;font-family:&quot;Mali&quot;;font-weight:700">Answer: </span>
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal">This won’t become a thing at the moment because we believe it’s just something extra that isn’t needed. When I spoke to HRs about how often we got pinged for assistance, a lot of us said that we never got pings and it was about 1-2 a week that we would get one. </span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;height:11pt;text-align:center">
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal"></span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:center">
+              <span style="font-size:12pt">━━━━━</span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;height:11pt;text-align:center">
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal"></span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:center">
+              <span style="font-size:14pt;font-family:&quot;Mali&quot;;font-weight:700">Suggestion:</span>
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal"> After recent HR resignations sessions just stop mid-afternoon for me (PST). We should try to bump in a few more sessions because there’s lots of people who really want to train for the job but can’t seem to find a good timezone friendly session for them.</span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;height:11pt;text-align:center">
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal"></span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:center">
+              <span style="font-size:14pt;font-family:&quot;Mali&quot;;font-weight:700">Answer: </span>
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal">Hopefully this can get better as exams are over and when seniors are promoted! It’s hard to do at the moment because of exams.</span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;height:11pt;text-align:center">
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal"></span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:center">
+              <span style="font-size:12pt">━━━━━</span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;height:11pt;text-align:center">
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal"></span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:center">
+              <span style="font-size:14pt;font-family:&quot;Mali&quot;;font-weight:700">Suggestion: </span>
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal">In the next version of the hotel, perhaps give housekeepers more things to do</span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;height:11pt;text-align:center">
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal"></span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:center">
+              <span style="font-size:14pt;font-family:&quot;Mali&quot;;font-weight:700">Answer: </span>
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal">When we had the last meeting I spoke with Baby and Bear about things regarding V7 and they had some amazing ideas for all of the ranks. Housekeeping will definitely become more fun (as well as the other ranks).</span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;height:11pt;text-align:center">
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal"></span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:center">
+              <span style="font-size:12pt">━━━━━</span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;height:11pt;text-align:center">
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal"></span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:center">
+              <span style="font-size:14pt;font-family:&quot;Mali&quot;;font-weight:700">Suggestion:</span>
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal"> I think that directing it to us in a polite, secret way might help us more rather than pinging every MR and make an announcement about it.</span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;height:11pt;text-align:center">
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal"></span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:center">
+              <span style="font-size:14pt;font-family:&quot;Mali&quot;;font-weight:700">Answer: </span>
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal">This suggestion was about when people make mistakes and we make announcements on it, just so you all know when we announce things it’s because we’ve seen an increase in it happening from multiple people so not just you. </span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;height:11pt;text-align:center">
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal"></span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:center">
+              <span style="font-size:12pt">━━━━━</span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;height:11pt;text-align:center">
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal"></span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:center">
+              <span style="font-size:14pt;font-family:&quot;Mali&quot;;font-weight:700">Suggestion: </span>
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal">my suggestion is that we should announce our alliance events bc it’s the only channel of ours with announcements where we don’t ping people and it makes no sense considering we already don’t have many alliances and to not ping for events that rarely occur</span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;height:11pt;text-align:center">
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal"></span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:center">
+              <span style="font-size:14pt;font-family:&quot;Mali&quot;;font-weight:700">Answer: </span>
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal">I have spoken to the HR team about this and we have all agreed to make this happen, our only concern is just the amount of people that may/may not want the role but we will make it a thing and see how it goes!</span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;height:11pt;text-align:center">
+              <span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal"></span>
+            </p>
+            <p class="title" id="h.kj40qiyzmiyp" style="padding-top:0pt;margin:0;color:#000000;padding-left:0;font-size:26pt;padding-bottom:3pt;line-height:1.15;page-break-after:avoid;font-family:&quot;Arial&quot;;orphans:2;widows:2;text-align:center;padding-right:0">
+              <span style="color:#000000;font-weight:700;text-decoration:none;vertical-align:baseline;font-size:17pt;font-family:&quot;Mali&quot;;font-style:normal">General reminders/announcements</span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;height:11pt;text-align:left">
+              <span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:&quot;Arial&quot;;font-style:normal"></span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:center">
+              <span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal">I asked those that were recently promoted about how they found the information in the promotion guide. Some people said that it was good and others said that there were things missing. I have told HRs about what they think was missing in the guides so that should hopefully be fixed!</span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;height:11pt;text-align:center">
+              <span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal"></span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:center">
+              <span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal">MRs are now not allowed to join servers 40 minutes before, it has been changed to 30 minutes after getting a suggestion and having the majority of HRs agree.</span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;height:11pt;text-align:center">
+              <span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal"></span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:center">
+              <span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal">When pinged for assistance, please do not reply if you can’t come, just ignore the message. It floods the chat and it’s just unnecessary.</span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;height:11pt;text-align:center">
+              <span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal"></span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:center">
+              <span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal">You are no longer allowed to claim more than 1 mr assistance ticket at a time. Your first ticket must be dealt with and closed before you are allowed to deal with another.</span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;height:11pt;text-align:center">
+              <span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal"></span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:center">
+              <span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal">After speaking with HRs, the rule of inappropriate clothing will be changed. Users can now wear no clothing even with a human skin tone. Users with actual inappropriate clothing will still be banned.</span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;height:11pt;text-align:center">
+              <span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal"></span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:center">
+              <span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal">This may already be known or assumed however I thought it would be useful to say it anyway, seniors are allowed to bypass the 3 MR limit at the hotel if they are dealing with bans.</span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;height:11pt;text-align:center">
+              <span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal"></span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:center">
+              <span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal">Someone complained about how things are kept confidential, it’s done for different reasons but if you knew everything rank wise then I feel like it wouldn’t be as exciting getting promoted. </span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;height:11pt;text-align:center">
+              <span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal"></span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:center">
+              <span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal">Inclusion, probably the biggest topic that I’ve had to deal with and honestly not my favourite because we don’t know how to fix it, we can’t force you all to be friends and there’s going to be times where people just don’t see a message because the chat is going too fast or they go out of discord whatever the case may be. We have had 5 announcements about inclusion and nothing seems to help. I asked you for your suggestions on what we could do to help and honestly I didn’t get as many responses as I would’ve hoped for, a few suggestions said to report it however it’s not always that easy, if it’s not obvious then they can say they simply didn’t see the chat and if this is the case and we were then to warn that person, it’s not very fair. There’s no way they can prove it and there’s no way the reporter can prove they didn’t go out of discord or to another chat. </span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;height:11pt;text-align:center">
+              <span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal"></span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:center">
+              <span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal">Another suggestion said that we should host mr events, events aren’t required for us to host and sometimes it is a struggle to come up with ideas and the time to do it. My question to you all would be do you think that events would help? </span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;height:11pt;text-align:center">
+              <span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal"></span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:center">
+              <span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal">To end this topic, you may not want to hear what I’m about to say but I do think it’s important that it’s mentioned. As HRs, we can only do so much, one suggestion said that it wasn’t our fault and people do need to try to involve themselves more as they themselves realised they weren’t involving themselves in conversations and to whoever that was I want to say thank you. In no way shape or form am I trying to blame it on all of you guys but please understand that we can’t do all of the work, you guys need to also try to involve yourselves and I do understand that it can be hard at times. </span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;height:11pt;text-align:center">
+              <span style="color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:&quot;Mali&quot;;font-style:normal"></span>
+            </p>
+            <p style="padding:0;margin:0;color:#000000;font-size:11pt;font-family:&quot;Arial&quot;;line-height:1.15;orphans:2;widows:2;text-align:center">
+              <span style="font-size:14pt;font-family:&quot;Mali&quot;;font-weight:400">Respect towards LRs. This isn’t something that is really reported in the report form but it’s something that has come up in the complaints. LRs are usually younger than us, they’re not aware that some of the things they do can be annoying and they are just young. They mean no harm like I said earlier, just keep it in mind that they are younger and probably nervous talking to you. Any disrespect towards LRs whether that be for suggesting them for a promotion or just speaking about them in general won’t be tolerated, feel free to report it in the report form.</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
