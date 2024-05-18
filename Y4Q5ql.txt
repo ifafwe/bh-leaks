@@ -1,0 +1,129 @@
+MR CHANNELS
+#mr-rules
+No Description
+Roles that can see this channel: HR Team, Bots, Founder, MR Team, Zira, Chairman, Vice Chairman, Board Of Directors
+#mr-announcements
+No Description
+Roles that can see this channel: HR Team, Bots, Founder, MR Team, Zira, Chairman, Vice Chairman, Board Of Directors
+#mr-lounge
+Description: Any use of offensive or derogatory terms will not be tolerated. Sending disturbing images or messages is prohibited.
+Roles that can see this channel: MR Team, Senior Management, Founder, Head of Security/Services, Shift Manager, HR Team, Management, Head Receptionist, Chairman, Vice Chairman, Board of Directors
+#mr-discussion
+Description: For serious matters only. This channel is NOT for reports. You must report it in the proper channel, then if they continue rejoining 3+ times, you may tag a Senior+ for assistance.
+Roles that can see this channel: Senior Management, MR Team, Founder, HR Team, Chairman, Vice Chairman, Board of Directors
+#mr-notices
+Description: Our notice channel. Check pinned messages for more information!
+Roles that can see this channel: Head Receptionist, MR Team, Head of Security/Services, HR Team, Chairman, Vice Chairman, Board of Directors
+#mr-bot-commands
+Description: Use any bot commands here. For music bot commands, please say :help
+Roles that can see this channel: MR Team, Bloxlink, Founder, HR Team, Music Bot, Chairman, Vice Chairman, Board of Directors
+#mr-memories
+Description: 
+- ONLY post photos. Do not talk in this channel.
+
+- You may only post 2 photos a day maximum, unless not many have been posted that day. We want to give everyone a fair chance.
+
+- Please post interesting photos (check staff-lounge pins for examples.) This isn't meant to be a "I did a shift!" channel, those can go in the public photo channels.
+
+- Photos CAN contain cursing, but they must follow all staff lounge rules (such as nothing inappropriate, offensive, etc.)
+Roles that can see this channel: HR Team, Founder, MR Team, Chairman, Vice Chairman, Board of Directors
+#mr-game-nights
+No Description
+Roles that can see this channel: HR Team, Senior Management, MR Team, Chairman, Vice Chairman, Board of Directors
+MANAGEMENT CHANNELS
+#managament-rules
+No Description
+Roles that can see this channel: Reviewer, HR Team, Founder, Chairman, Vice Chairman, Board of Directors
+#management-announcements
+No Description
+Roles that can see this channel: Founder, HR Team, Reviewer, Chairman, Vice Chairman, Board of Directors
+#management-lounge
+Description: Swearing in this channel is permitted, but must be kept to a respectful limit. Any use of offensive or derogatory terms will not be tolerated.
+Roles that can see this channel: HR Team, Senior Management, Reviewer, Chairman, Vice Chairman, Board of Directors
+#management-discussion
+Description: For serious matters only. This channel is NOT for reports. You must report it in the proper channel, then if they continue rejoining 3+ times, you may tag a Senior+ for assistance.
+Roles that can see this channel: Senior Management, HR Team, Reviewer, Founder, Chairman, Vice Chairman, Board of Directors
+#management-bot-commands
+No Description
+Roles that can see this channel: Bloxlink, Reviewer, HR Team, Founder, Chairman, Vice Chairman, Board of Directors
+#management-requests
+No Description
+Roles that can see this channel: HR Team, Founder, Senior Management, Management, Chairman, Vice Chairman, Board of Directors
+#promotion-suggestions
+No Description
+Roles that can see this channel: Reviewer, HR Team, Senior Management, Chairman, Vice Chairman, Board of Directors
+#appeal-submission
+No Description
+Roles that can see this channel: HR Team, Reviewer, Chairman, Vice Chairman, Board of Directors
+#bot-logs
+No Description
+Roles that can see this channel: Reviewer, Founder, HR Team, Chairman, Vice Chairman, Board of Directors
+SENIOR CHANNELS
+#senior-announcements
+No Description
+Roles that can see this channel: Vice Chairman, Dyno, HR Team, Senior Management, Chairman, Board of Directors
+#senior-lounge
+No Description
+Roles that can see this channel: HR Team, Founder, Senior Management, Chairman, Vice Chairman, Board of Directors
+#session-attendance
+No Description
+Roles that can see this channel: Senior Management, HR Team, Chairman, Vice Chairman, Board of Directors
+MR VC CHANNELS
+MR Voice Chat 1
+MR Voice Chat 2
+MR Music Channel
+MGMT Voice Chat
+S. MGMT Voice Chat
+PRIVATE OFFICES
+#polks-office
+Description: No cursing! Only current MRs+, former HRs, and a few people chosen by Polk may access this channel. Consider this a general discussion where you talk in public.
+Roles that can see this channel: Polk's Office Key, Board of Directors, HR Team, Chairman, Vice Chairman
+#mins-office
+No Description
+Roles that can see this channel: HR Team, Min's Office Key, Chairman, Vice Chairman, Board of Directors
+#bonnies-office
+No Description
+Roles that can see this channel: Bonnie's Office key, HR Team, Chairman, Vice Chairman, Board of Directors
+Users that can see this channel: @hopefvul
+#bloos-office
+No Description
+Roles that can see this channel: HR Team, Bloo's Bread key, Chairman, Vice Chairman, Board of Directors
+PRIVATE OFFICES (VC)
+Polk's Office
+Min's Office
+Bonnie's Office
+Bloo's Office
+HR CHANNELS
+#hr-commands
+No Description
+Roles that can see this channel: HR Team, Bloxlink, Bots, Dyno, Chairman, Vice Chairman, Board of Directors
+#ticket-logs
+No Description
+Roles that can see this channel: Bots, HR Team, Chairman, Vice Chairman, Board of Directors
+#unappealable-bans
+No Description
+Roles that can see this channel: Founder, HR Team, Chairman, Vice Chairman, Board of Directors
+ARCHIVED CHANNELS
+#nominee-discussion
+#management-lounge-?
+#staff-lounge-archive
+#award-winners-2022
+#award-speeches-archive
+#award-speeches-2022
+#former-hr-lounge-archive
+#nominee-info-2022
+#promotion-dates
+#award-winners-archive
+#nominee-discussion-2021 (?)
+#award-suggestions
+#may-madness-suggestions
+#campaigning
+#mr-leaker-reports
+#speeches-info-archive
+#nominee-info-archive
+#suggestions
+
+TICKETS
+Roles that can view MR Assistance tickets: MR Team, HR Team, Chairman, Vice Chairman, Board of Directors
+Roles that can view Awaiting Response tickets (Support): Support Team, Chairman, Vice Chairman, Board of Directors
+Roles that can view Under Review tickets (Support): Support Team, Chairman, Vice Chairman, Board of Directors

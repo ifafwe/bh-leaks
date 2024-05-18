@@ -1,0 +1,33 @@
+Bloxton Hotels | Shift Log Form
+The official submission form for submitting your Bloxton Hotels shift logs. This form should only be utilized by those ranked Head of Security, Head of Services or Head Receptionist. This form is regularly maintained and reviewed by the High-Rank Team.
+
+Email Required: Yes
+Email Shared: No
+
+* Indicates required question
+
+What is your ROBLOX username?*
+
+
+What is your rank?
+
+• 8 | Head of Security
+• 9 | Head of Services
+• 10 | Head Receptionist
+
+Please select the date of your shift.
+[DATE CHOOSER]
+
+What time did your shift start?*
+Ensure you use the 24-hour time format only.
+[TIME CHOOSER]
+
+What time did your shift end?*
+Ensure you use the 24-hour time format only.
+[TIME CHOOSER]
+
+Please provide screenshot evidence of your shift.*
+Ensure your evidence is provided in link-form, using a trusted platform.
+
+Do you have any notes or comments in regards to your shift?
+If you do not have any, please leave this question blank.
